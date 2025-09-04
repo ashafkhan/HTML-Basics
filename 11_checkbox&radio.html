@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkbox & Radio (input elements)</title>
+</head>
+<body>
+  <form action="/server">
+
+    <h2>Checkbox and radio button</h2>
+
+    <input type="checkbox" id="age" name="age" checked>
+    <label for="age">I am 18+</label>
+    
+    <!-- Radio -->
+    <div>
+      <input type="radio" id="apple" name="fruits" value="apple">
+      <label for="apple">apple</label>
+      <input type="radio" id="mango" name="fruits" value="mango">
+      <label for="mango">mango</label>
+      <input type="radio" id="banana" name="fruits" value="banana">
+      <label for="banana">banana</label>
+    </div>
+    
+    <!-- Checkbox -->
+    <div>
+      Choose your subjects:
+      <input type="checkbox" id="maths" name="sub" value="math">
+      <label for="maths">maths</label>
+      <input type="checkbox" id="science" name="sub" value="sci">
+      <label for="science">science</label>
+      <input type="checkbox" id="english" name="sub" value="eng">
+      <label for="science">science</label>
+    </div>
+    
+    <button>Submit</button>
+  </form>
+
+  <hr>
+
+  <h2>Select and Text area element</h2>
+  <form action="/server">
+
+    <!-- Select element (for dropdown) -->
+    <div>
+      Choose your proffession:
+      <select name="profession" id="proffession">
+        <option>ML Engineer</option>
+        <option selected>select your option</option>
+        <option value="stu">student</option>
+        <option value="dev">developer</option>
+      </select>
+    </div>
+
+    <button>Submit</button>
+  </form>
+
+  <br>
+
+  <form action="/action">
+
+    <!-- input (type = range)  -->
+    <label for="vol">Select volume for music:</label>
+    <input type="range" id="vol" min="0" max="100" name="vol" step="10" value="50">
+    <button>Submit</button>
+
+  <br>
+
+  <!-- text area -->
+  <div>
+    <label for="feedback">Please give your feedback:</label>
+    <textarea name="feedback" id="feedback" rows="5" cols="20" placeholder="write your feedback here"></textarea>
+  </div>
+
+  <button>Submit</button>
+  </form>
+</body>
+</html>
